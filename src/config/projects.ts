@@ -1,0 +1,58 @@
+import { ProjectInfoType } from "@/config/types";
+
+export const projectsInfo: ProjectInfoType[] = [
+    {
+        id: 1,
+        name: "Vitube - Video Streaming Platform",
+        description: "Vitube is a powerful video streaming platform built with React, Node.js, MongoDB, Nodemailer, and Cloudinary, designed to provide seamless video streaming and sharing.",
+        img: "https://res.cloudinary.com/dqcejxdbf/image/upload/v1703741625/275163229-dd7c9829-5e47-421e-b998-8469419a5751_zinojt.png",
+        link: "https://vitube-streaming-platform.vercel.app/",
+        tech_stack: ["React","Tailwind CSS","NodeJS","Express","MongoDB","Cloundinary"],
+        type: "Full Stack",
+    },
+    {
+        id: 2,
+        name: "Chatpiece",
+        description: "This GitHub repository contains a web application built with NextJS and Tailwind CSS, designed to provide users with a social media-like experience for creating posts and commenting on them. ",
+        img: "https://res.cloudinary.com/dqcejxdbf/image/upload/v1703744416/chatpiece_mxvgn7.png",
+        link: "https://chatpiece.vercel.app/",
+        tech_stack: ["NextJS","Tailwind CSS","PostgreSQL"],
+        type: "Full Stack",
+    },
+    {
+        id: 3,
+        name: "Toka NFT - Langing Page",
+        description: "See live here",
+        img: "https://res.cloudinary.com/dqcejxdbf/image/upload/v1703744787/Screenshot_2023-12-28_at_11-56-12_Vite_React_xtf1nx.png",
+        link: "https://toka-clone.onrender.com/",
+        tech_stack: ["React","Tailwind CSS"],
+        type: "Front End",
+    },
+    {
+        id: 4,
+        name: "AI Image Generator",
+        description: "DALLE-E-Clone is a web application built using OpenAI's DALL-E API that generates images from textual prompts. This repository contains the code for the web application, allowing users to easily interact with the DALL-E API and generate their own images.",
+        img: "https://res.cloudinary.com/dqcejxdbf/image/upload/v1703744971/Screenshot_2023-12-28_at_11-59-03_DALL-E_2.0_ezbu1k.png",
+        link: "https://vitube-streaming-platform.vercel.app/",
+        tech_stack: ["OpenAI","React","Tailwind CSS","NodeJS","Express","MongoDB"],
+        type: "Full Stack",
+    },
+    {
+        id: 5,
+        name: "Movieboot",
+        description: "This project consists of a Spring Boot-based API that provides movie details, including title, description, trailer link, and more, as well as a React frontend for interacting with the API.",
+        img: "https://res.cloudinary.com/dqcejxdbf/image/upload/v1703745114/270899999-08171a68-fae7-4a13-9e44-5ef63a712a76_f8xxae.png",
+        link: "https://vitube-streaming-platform.vercel.app/",
+        tech_stack: ["React","Tailwind CSS","Spring Boot","MongoDB","Cloundinary"],
+        type: "Full Stack",
+    },
+    {
+        id: 6,
+        name: "Vitube - Video Streaming Platform",
+        description: "Vitube is a powerful video streaming platform built with React, Node.js, MongoDB, Nodemailer, and Cloudinary, designed to provide seamless video streaming and sharing.",
+        img: "https://res.cloudinary.com/dqcejxdbf/image/upload/v1703741625/275163229-dd7c9829-5e47-421e-b998-8469419a5751_zinojt.png",
+        link: "https://vitube-streaming-platform.vercel.app/",
+        tech_stack: ["React","Tailwind CSS","NodeJS","Express","MongoDB","Cloundinary"],
+        type: "Full Stack",
+    },
+];
