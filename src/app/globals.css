@@ -2,26 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer utilities {
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Background */
+
+.bg-blur-circle {
+  background-image: url("/assets/images/hero-bg2.png");
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: top;
+  width: 100%;
+}
+
+.bg-nav {
+  background-image: url("/assets/images/hero-bg2.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
+  width: 100%;
+}
+
+.bg-foot {
+  background-image: url("/assets/images/hero-bg2.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom;
+  height: 80px;
+  width: 100%;
 }
