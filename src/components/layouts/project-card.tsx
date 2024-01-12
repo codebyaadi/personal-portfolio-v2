@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { ProjectInfoType } from "@/config/types";
+import Link from "next/link";
 
 const ProjectCard: React.FC<ProjectInfoType> = ({
     id,
@@ -26,6 +27,7 @@ const ProjectCard: React.FC<ProjectInfoType> = ({
             key={id}
             className="bg-charcoalblue p-3 rounded"
         >
+            <Link href={link} target="_blank">
             <div id="image" className="w-full h-40 rounded overflow-hidden">
                 <Image
                     src={img}
@@ -50,6 +52,7 @@ const ProjectCard: React.FC<ProjectInfoType> = ({
                 </div>
             </div>
             <code className="sr-only">{type}</code>
+            </Link>
         </motion.div>
     );
 };
