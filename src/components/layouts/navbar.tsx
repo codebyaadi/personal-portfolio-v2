@@ -54,8 +54,7 @@ const Navbar = () => {
                   id={link.id.toString()}
                   href={link.href}
                   onClick={handleNavLinkClick}
-                  className={`${pathname === link.href ? "bg-linear-gradient bg-clip-text text-transparent" : "text-white"
-                    } font-unbounded font-light text-4xl py-4`}
+                  className="font-unbounded font-light text-4xl py-4"
                 >
                   <motion.span
                     initial={{ x: "100%", opacity: 0 }}
@@ -66,7 +65,7 @@ const Navbar = () => {
                       delay: link.id * 0.2,
                     }}
                     whileHover={{ letterSpacing: 4}}
-                    className="block"
+                    className={`${pathname === link.href ? "bg-linear-gradient bg-clip-text text-transparent" : "text-white"} inline-block`}
                   >
                     {link.title}
                   </motion.span>
