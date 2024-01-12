@@ -48,8 +48,9 @@ const Navbar = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
             <div className="flex flex-col justify-between items-center md:items-start ml-0 md:mx-20 mt-28">
-              {navlinks.map((link) => (
+              {navlinks.map((link, index) => (
                 <Link
+                  key={index}
                   id={link.id.toString()}
                   href={link.href}
                   onClick={handleNavLinkClick}
@@ -81,8 +82,8 @@ const Navbar = () => {
                 }}
                 className="flex flex-wrap gap-1 font-unbounded text-[10px] text-white/30 border-t border-white/10 mt-10 pt-1"
               >
-                {socialLinks.map((link) => (
-                  <Link className="hover:bg-linear-gradient hover:bg-clip-text hover:text-transparent" id={link.id.toString()} href={link.url} target="_blank">
+                {socialLinks.map((link, index) => (
+                  <Link key={index} className="hover:bg-linear-gradient hover:bg-clip-text hover:text-transparent" id={link.id.toString()} href={link.url} target="_blank">
                     {link.name}
                   </Link>
                 ))}

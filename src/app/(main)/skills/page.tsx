@@ -9,7 +9,9 @@ const Skills = () => {
             </div>
             <div className="w-full mx-auto mt-8 flex flex-col md:flex-row justify-between items-start">
                 {skillsInfo.map((skill) => (
-                    <SkillCard id={skill.id} icon={skill.icon} title={skill.title} skills={skill.skills} />
+                    <div key={skill.id}>
+                        <SkillCard id={skill.id} icon={skill.icon} title={skill.title} skills={skill.skills} />
+                    </div>
                 ))}
             </div>
         </section>
