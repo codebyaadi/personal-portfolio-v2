@@ -18,18 +18,18 @@ export const navlinks: NavLink[] = [
     },
     {
         id: 2,
-        title: "about",
-        href: "/about",
-    },
-    {
-        id: 3,
         title: "projects",
         href: "/projects",
     },
     {
-        id: 4,
+        id: 3,
         title: "skills",
         href: "/skills",
+    },
+    {
+        id: 4,
+        title: "contact",
+        href: "/contact",
     },
 ];
 

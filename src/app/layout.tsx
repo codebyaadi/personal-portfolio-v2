@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { fontPrompt, fontUnbounded } from "@/lib/fonts";
 import { siteConfig } from "@/config/site";
+import CustomCursor from "@/components/cursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} ${fontUnbounded.variable} ${fontPrompt.variable}`}>
         {children}
+        <CustomCursor />
       </body>
     </html>
   );

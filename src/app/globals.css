@@ -44,3 +44,33 @@
   height: 80px;
   width: 100%;
 }
+
+.animated-cursor {
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 40;
+  width: 100px;
+  height: 100px;
+  display: block;
+
+  @media screen and (max-width: 768px) {
+      display: none;
+  }
+}
+
+.animated-cursor img {
+  animation: rotateCursor 5s linear infinite;
+}
+
+@keyframes rotateCursor {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}

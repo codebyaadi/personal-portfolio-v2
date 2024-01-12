@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-nav flex justify-center sticky top-0 left-0 z-20 w-full h-20 border-b border-white/15">
+    <nav className="bg-nav flex justify-center sticky top-0 left-0 z-20 w-full h-16 md:h-20 border-b border-white/15">
       <div className="w-full flex justify-between items-center px-8 md:px-28 py-2 md:py-4">
         <div id="logo">
           <Logo />
@@ -64,6 +64,7 @@ const Navbar = () => {
                       ease: "easeInOut",
                       delay: link.id * 0.2,
                     }}
+                    whileHover={{ letterSpacing: 4}}
                     className="block"
                   >
                     {link.title}
