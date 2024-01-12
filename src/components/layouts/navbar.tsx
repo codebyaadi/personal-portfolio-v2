@@ -66,7 +66,6 @@ const Navbar = () => {
                       delay: link.id * 0.2,
                     }}
                     whileHover={{ letterSpacing: 4}}
-                    className="block"
                   >
                     {link.title}
                   </motion.span>
