@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.title
   },
   verification: {
-    google: "kr4P3vbIOyp4lpgFIRnkamXWVpgaqhMQmXmm5YYYHmk"
+    google: process.env.GOOGLE_CONSOLE_KEY
   }
 };
 
